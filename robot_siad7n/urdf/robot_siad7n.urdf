@@ -1,0 +1,453 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="robot_siad7n">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.00014278 0.053271 0.076797"
+        rpy="0 0 0" />
+      <mass
+        value="9.5605" />
+      <inertia
+        ixx="0.10698"
+        ixy="0.00014132"
+        ixz="7.3231E-05"
+        iyy="0.062214"
+        iyz="-0.010578"
+        izz="0.13651" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.23922 0.47451 0.13333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_1">
+    <inertial>
+      <origin
+        xyz="1.00333289226068E-06 0.18910661867792 -0.0156119231463446"
+        rpy="0 0 0" />
+      <mass
+        value="11.7569497464344" />
+      <inertia
+        ixx="0.183154145711203"
+        ixy="-1.40452192740829E-06"
+        ixz="5.87348944358762E-07"
+        iyy="0.0617033488852259"
+        iyz="0.0136703017954783"
+        izz="0.186679492539375" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/link_1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.23921568627451 0.474509803921569 0.133333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/link_1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_1"
+    type="revolute">
+    <origin
+      xyz="0 0 0.1265"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="100"
+      velocity="50" />
+  </joint>
+  <link
+    name="link_2">
+    <inertial>
+      <origin
+        xyz="9.94785718411872E-06 0.272683106800216 0.0295582992007278"
+        rpy="0 0 0" />
+      <mass
+        value="10.0552877935453" />
+      <inertia
+        ixx="0.338020265619103"
+        ixy="-1.29257105266194E-05"
+        ixz="2.92886808331694E-06"
+        iyy="0.0467291504249713"
+        iyz="0.0229500840246102"
+        izz="0.33975383737088" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/link_2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/link_2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_2"
+    type="revolute">
+    <origin
+      xyz="0 0.298 0"
+      rpy="0 0 0" />
+    <parent
+      link="link_1" />
+    <child
+      link="link_2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_3">
+    <inertial>
+      <origin
+        xyz="-0.120604556662113 0.153702041122856 0.0405760225530175"
+        rpy="0 0 0" />
+      <mass
+        value="8.43890800694608" />
+      <inertia
+        ixx="0.117451146475061"
+        ixy="-1.11139371010709E-06"
+        ixz="4.98884143693677E-06"
+        iyy="0.0700119057924175"
+        iyz="0.03608922143285"
+        izz="0.0817537347683884" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/link_3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.749019607843137 0.749019607843137 0.749019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/link_3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_3"
+    type="prismatic">
+    <origin
+      xyz="-0.11689 0.3019 0.17473"
+      rpy="3.1416 -0.021604 -3.1416" />
+    <parent
+      link="link_2" />
+    <child
+      link="link_3" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0.32"
+      upper="0.32"
+      effort="500"
+      velocity="10" />
+  </joint>
+  <link
+    name="link_4">
+    <inertial>
+      <origin
+        xyz="-7.95805517261883E-07 -0.209937136161797 0.0956398595260759"
+        rpy="0 0 0" />
+      <mass
+        value="6.45549495463595" />
+      <inertia
+        ixx="0.110031218078694"
+        ixy="8.14763171846297E-06"
+        ixz="1.78665525114126E-06"
+        iyy="0.0170882421910814"
+        iyz="-0.0109169628374775"
+        izz="0.110828826228631" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/link_4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/link_4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_4"
+    type="revolute">
+    <origin
+      xyz="-0.12061 0.2426 -0.0092049"
+      rpy="3.0984 0 1.5708" />
+    <parent
+      link="link_3" />
+    <child
+      link="link_4" />
+    <axis
+      xyz="0 0.043194 -0.99907" />
+    <limit
+      lower="-3.1416"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_5">
+    <inertial>
+      <origin
+        xyz="-0.0912836152352242 0.117335734001109 0.0436858658973192"
+        rpy="0 0 0" />
+      <mass
+        value="2.87980693010728" />
+      <inertia
+        ixx="0.0218028334011329"
+        ixy="2.53210545042016E-05"
+        ixz="-2.18653601981355E-05"
+        iyy="0.0107070242154643"
+        iyz="0.00640548761983692"
+        izz="0.018114767483159" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/link_5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.749019607843137 0.749019607843137 0.749019607843137 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/link_5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_5"
+    type="prismatic">
+    <origin
+      xyz="0.12764 -0.29297 -0.021311"
+      rpy="-1.5708 1.5276 1.5708" />
+    <parent
+      link="link_4" />
+    <child
+      link="link_5" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0.25"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="link_6">
+    <inertial>
+      <origin
+        xyz="9.83123495118532E-06 0.0698495340886123 0.0348582696191422"
+        rpy="0 0 0" />
+      <mass
+        value="2.01842022888389" />
+      <inertia
+        ixx="0.0097601390769885"
+        ixy="-1.90463034174779E-06"
+        ixz="2.82424262087798E-07"
+        iyy="0.00429998926902782"
+        iyz="0.0021592212303721"
+        izz="0.00977941238335986" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/link_6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.23921568627451 0.474509803921569 0.133333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/link_6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_6"
+    type="revolute">
+    <origin
+      xyz="-0.091413 0.18088 0"
+      rpy="3.1416 0 -3.1416" />
+    <parent
+      link="link_5" />
+    <child
+      link="link_6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-1.5708"
+      upper="1.5708"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="end_efector">
+    <inertial>
+      <origin
+        xyz="-0.00019052 0.008611 -0.00039707"
+        rpy="0 0 0" />
+      <mass
+        value="0.095976" />
+      <inertia
+        ixx="5.9835E-05"
+        ixy="-4.3387E-09"
+        ixz="-5.6855E-07"
+        iyy="0.00011509"
+        iyz="-2.4456E-06"
+        izz="5.859E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/end_efector.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.23922 0.47451 0.13333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://robot_siad7n/meshes/end_efector.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_7"
+    type="revolute">
+    <origin
+      xyz="0 0.1622 0.01686"
+      rpy="0.043208 1.5708 0" />
+    <parent
+      link="link_6" />
+    <child
+      link="end_efector" />
+    <axis
+      xyz="0 0.99907 -0.043194" />
+    <limit
+      lower="-3.1416"
+      upper="3.1416"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
