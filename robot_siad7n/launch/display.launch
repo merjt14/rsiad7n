@@ -16,5 +16,5 @@
     name="rviz"
     pkg="rviz"
     type="rviz"
-    args="-d $(find robot_siad7n)/config/siad7n_config.rviz" />
+    args="-d $(find robot_siad7n)/urdf.rviz" />
 </launch>
