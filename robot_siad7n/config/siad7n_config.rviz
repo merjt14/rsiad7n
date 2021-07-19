@@ -56,16 +56,16 @@ Visualization Manager:
       Enabled: true
       Links:
         All Links Enabled: true
+        EF:
+          Alpha: 1
+          Show Axes: false
+          Show Trail: false
+          Value: true
         Expand Joint Details: false
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
         base_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        end_efector:
           Alpha: 1
           Show Axes: false
           Show Trail: false
@@ -106,6 +106,44 @@ Visualization Manager:
       Update Interval: 0
       Value: true
       Visual Enabled: true
+    - Class: rviz/TF
+      Enabled: true
+      Frame Timeout: 15
+      Frames:
+        All Enabled: true
+        EF:
+          Value: true
+        base_link:
+          Value: true
+        link_1:
+          Value: true
+        link_2:
+          Value: true
+        link_3:
+          Value: true
+        link_4:
+          Value: true
+        link_5:
+          Value: true
+        link_6:
+          Value: true
+      Marker Scale: 1
+      Name: TF
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+      Tree:
+        base_link:
+          link_1:
+            link_2:
+              link_3:
+                link_4:
+                  link_5:
+                    link_6:
+                      EF:
+                        {}
+      Update Interval: 0
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -131,16 +169,16 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 3.59634542
+      Distance: 2.83608842
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.0599999987
         Stereo Focal Distance: 1
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: 0
-        Y: 0
-        Z: 0
+        X: -0.0324056521
+        Y: -0.522420704
+        Z: 0.392321497
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.0500000007
       Invert Z Axis: false
