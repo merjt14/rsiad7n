@@ -201,7 +201,7 @@
     </collision>
   </link>
   <joint
-    name="join_3"
+    name="joint_3"
     type="prismatic">
     <origin
       xyz="3.4347E-05 0.3019 0.265"
@@ -222,13 +222,13 @@
     name="link_4">
     <inertial>
       <origin
-        xyz="-7.2996E-07 0.20978 -0.020989"
+        xyz="-7.3038E-07 0.20978 -0.020989"
         rpy="0 0 0" />
       <mass
         value="6.4555" />
       <inertia
         ixx="0.11003"
-        ixy="-8.2174E-06"
+        ixy="-8.2172E-06"
         ixz="-1.4328E-06"
         iyy="0.016321"
         iyz="-0.0068309"
@@ -263,7 +263,7 @@
     type="revolute">
     <origin
       xyz="0 -0.2426 0"
-      rpy="3.1416 0 -1.5708" />
+      rpy="-3.1416 0 -1.5708" />
     <parent
       link="link_3" />
     <child
@@ -271,8 +271,8 @@
     <axis
       xyz="0 0 1" />
     <limit
-      lower="-4.5379"
-      upper="1.3963"
+      lower="4.5379"
+      upper="-1.3963"
       effort="0"
       velocity="0" />
   </joint>
